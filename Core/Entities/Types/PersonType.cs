@@ -2,8 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Core.Entities;
 
-public class PersonType : BaseEntity
+public class PersonType : BaseTypeEntity
 {
-    public string? Description { get; set; }
     public ICollection<Person>? Persons { get; set; }
 }

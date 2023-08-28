@@ -2,8 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Core.Entities;
 
-public class EmailType : BaseEntity
+public class EmailType : BaseTypeEntity
 {
-    public string? Description { get; set; }
     public ICollection<Email>? Emails { get; set; }
 }

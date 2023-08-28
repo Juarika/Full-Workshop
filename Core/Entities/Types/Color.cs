@@ -2,8 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Core.Entities;
 
-public class Color : BaseEntity
+public class Color : BaseTypeEntity
 {
-    public string? Description { get; set; }
     public ICollection<Vehicle>? Vehicles { get; set; }
 }
